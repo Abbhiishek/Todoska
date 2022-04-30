@@ -13,12 +13,12 @@ setup(
   version='0.1.01',
   description='A Basic Todo Tracker in Cli',
   long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
-  url='https://abbhishek.me',  
+  url='https://github.com/Abbhiishek/Todoska',  
   author='Abhishek Kushwaha',
   author_email='josh@edublocks.org',
   license='MIT', 
   classifiers=classifiers,
   keywords='Python , cli , Todo ,Todotracker , todo-tracker', 
   packages=find_packages(),
-  install_requires=['typer' , 'rich' , 'sqlite3>=2.7.6'] 
+  install_requires=['typer' , 'rich' , 'pysqlite3'] 
 )
