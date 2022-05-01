@@ -51,6 +51,13 @@ def delete_todo(position):
             change_position(pos, pos-1, False)
 
 
+# def drop_todo():
+#     with conn:
+#         c.execute('DELETE from todos')
+#     print("Dropped todos successfully")
+
+
+
 def change_position(old_position: int, new_position: int, commit=True):
     c.execute('UPDATE todos SET position = :position_new WHERE position = :position_old',
                 {'position_old': old_position, 'position_new': new_position})
@@ -75,3 +82,5 @@ def complete_todo(position: int):
     with conn:
         c.execute('UPDATE todos SET status = 2, date_completed = :date_completed WHERE position = :position',
                   {'position': position, 'date_completed': datetime.datetime.now().isoformat()})
+
+
