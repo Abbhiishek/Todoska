@@ -14,7 +14,6 @@ setup(
   name='Todoska',
   version='2.2.1',
   description='A Basic Todo Tracker in Cli',
-  long_description='Testing the typer packages',
   long_description_content_type="text/markdown",
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='https://github.com/Abbhiishek/Todoska',  
