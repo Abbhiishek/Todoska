@@ -1,7 +1,8 @@
 import sqlite3
 from typing import List
 import datetime
-from models import Todo
+from Todoska.models import Todo
+
 
 conn = sqlite3.connect('todos.db')
 c = conn.cursor()

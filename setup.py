@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 import setuptools
 
+
 classifiers = [
   'Development Status :: 5 - Production/Stable',
   'Intended Audience :: Education',
@@ -11,20 +12,24 @@ classifiers = [
  
 setup(
   name='Todoska',
-  version='0.2.06',
+  version='2.2.1',
   description='A Basic Todo Tracker in Cli',
-  long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
+  long_description='Testing the typer packages',
+  long_description_content_type="text/markdown",
+  long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='https://github.com/Abbhiishek/Todoska',  
   author='Abhishek Kushwaha',
   author_email='abhishekkushwaha1479@gmail.com',
   license='MIT', 
-  entry_points='''
-        [console_scripts]
-        todoska=Todo-Tracker.__main__:app
-    ''',
+  entry_points={
+    'console_scripts': [
+      'Todoska = Todoska.todocli:app',
+
+    ]
+  },
   classifiers=classifiers,
   keywords=['Python' , 'cli' , 'Todo' ,'Todotracker' , 'todo-tracker' , 'todo-tracker-cli', 'Todoska'], 
-  packages=setuptools.find_packages(),
+  packages=find_packages(),
   python_requires='>=3.6',
   install_requires=['typer' , 'rich' ] 
 )
