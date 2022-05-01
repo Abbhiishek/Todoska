@@ -12,7 +12,7 @@ classifiers = [
  
 setup(
   name='Todoska',
-  version='2.2.1',
+  version='2.2.2',
   description='A Basic Todo Tracker in Cli',
   long_description_content_type="text/markdown",
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
