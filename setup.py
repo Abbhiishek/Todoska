@@ -12,10 +12,10 @@ classifiers = [
  
 setup(
   name='Todoska',
-  version='2.2.2',
+  version='4.2.0',
   description='A Basic Todo Tracker in Cli',
   long_description_content_type="text/markdown",
-  long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
+  # long_description=open('/README.md').read(),
   url='https://github.com/Abbhiishek/Todoska',  
   author='Abhishek Kushwaha',
   author_email='abhishekkushwaha1479@gmail.com',
