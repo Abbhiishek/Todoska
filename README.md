@@ -1,6 +1,12 @@
-## Todoska
+# Todoska
+<div align= "center">
+<h2> Todoska is a simple 😇, fast ⏩, and powerful todo list manager 🛠.</h2>
+</div>
 
-Todoska is a simple, fast, and powerful todo list manager.
+<br>
+<br>
+
+<img src="./src/todoska.gif">
 
 
 ## Installation
